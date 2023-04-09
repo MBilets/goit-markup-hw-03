@@ -1,0 +1,212 @@
+:root {
+  --color-iris: #4d5ae5;
+  --color-ocean: #404bbf;
+  --color-navy-blue: #2e2f42;
+  --color-green: #31d0aa;
+  --color-slate: #434455;
+  --color-light-slate: #8e8f99;
+  --color-cornflower: #e7e9fc;
+  --color-cloud: #f4f4fd;
+  --color-navy-blue-modal: #2e2f42;
+  --color-grey: #2e2f42;
+  --color-white: #ffffff;
+  --color-dairy: #fcfcfc;
+}
+/**
+  |============================
+  | Base styles 
+  |============================
+*/
+Body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-slate);
+  background-color: var(--color-white);
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+/**
+  |============================
+  | styles header
+  |============================
+*/
+.header-nav {
+  color: var(--color-ocean);
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  line-height: 1.17;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--color-iris);
+}
+.header-logo-studio {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+}
+.header-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
+.header-nav .header-link:hover,
+.header-nav .header-link:focus {
+  color: var(--color-ocean);
+
+}
+.adrs {
+  font-style: normal;
+}
+.header-adrs {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+.adrs .header-adrs:hover,
+.adrs .header-adrs:focus {
+  color: var(--color-ocean);
+}
+/**
+  |============================
+  | styles Hero section 1
+  |============================
+*/
+.hero-section {
+  background-color: var(--color-navy-blue);
+}
+.hero-header {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  color: var(--color-white);
+}
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-iris);
+  color: var(--color-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404BBF;
+}
+/**
+  |============================
+  | styles section 3
+  |============================
+*/
+.header-three {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-size: 20px;
+  color: var(--color-navy-blue);
+}
+.text {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+.header-two {
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  font-size: 36px;
+  color: var(--color-navy-blue);
+}
+/**
+  |============================
+  | styles section 4
+  |============================
+*/
+.team {
+  background-color: var(--color-cloud);
+}
+.list-point {
+  background-color: var(--color-white);
+}
+/**
+  |============================
+  | footer
+  |============================
+*/
+.footer {
+  background-color: var(--color-navy-blue);
+}
+.studio-footer {
+  color: var(--color-cloud);
+  font-family: 'Raleway', sans-serif
+  line-height: 1.17;
+}
+.text-footer {
+  color: var(--color-cloud);
+}
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+.btn-portfolio {
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+  color: var(--color-iris);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-cloud);
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  color: var(--color-white);
+  background-color: var(--color-ocean);
+}
+
+.text-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+}
