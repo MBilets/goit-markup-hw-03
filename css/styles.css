@@ -12,6 +12,15 @@
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /**
   |============================
   | Base styles 
@@ -20,36 +29,88 @@
 Body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
   color: var(--color-slate);
   background-color: var(--color-white);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/**
+img {
+  display: block;
+}
+.header-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*
   |============================
   | styles header
   |============================
 */
+.header .container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 0 auto;
+}
+.header {
+  border-bottom: 1px solid var(--heder-border-cl);
+}
 .header-nav {
   color: var(--color-ocean);
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  margin-right: 76px;
   line-height: 1.17;
 
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
 
   color: var(--color-iris);
 }
@@ -67,6 +128,10 @@ Body {
   color: #2e2f42;
 }
 .header-link {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -77,10 +142,11 @@ Body {
 .header-nav .header-link:hover,
 .header-nav .header-link:focus {
   color: var(--color-ocean);
-
 }
-.adrs {
-  font-style: normal;
+.list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
 }
 .header-adrs {
   font-style: normal;
@@ -94,21 +160,35 @@ Body {
 .adrs .header-adrs:focus {
   color: var(--color-ocean);
 }
-/**
+
+.adrs {
+  font-style: normal;
+  display: flex;
+  gap: 40px;
+}
+/*
   |============================
   | styles Hero section 1
   |============================
 */
 .hero-section {
   background-color: var(--color-navy-blue);
+  padding: 188px 0;
+  text-align: center;
 }
 .hero-header {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.07;
+  max-width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--color-white);
 }
 .hero-button {
@@ -122,20 +202,47 @@ Body {
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
-/**
+/*
   |============================
-  | styles section 3
+  | styles section 2
   |============================
 */
+.features {
+  padding: 120px 0;
+}
+.features-description {
+  display: flex;
+  gap: 24px;
+}
+.features-list {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.features-list:nth-last-child() {
+  margin-right: 0;
+}
+.features-list {
+  width: calc((100% - 72px) / 4);
+}
 .header-three {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 8px;
   font-size: 20px;
   color: var(--color-navy-blue);
 }
@@ -144,27 +251,59 @@ Body {
   line-height: 1.5;
   font-size: 16px;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--color-slate);
+}
+.team-descr {
+  padding: 32px 16px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/*
+  |============================
+  | styles section 3
+  |============================
+*/
+.product-section {
+  padding-bottom: 120px;
 }
 .header-two {
   font-weight: 700;
+  font-style: normal;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
   font-size: 36px;
+  margin-bottom: 72px;
   color: var(--color-navy-blue);
 }
-/**
+.list .header-two {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+/*
   |============================
   | styles section 4
   |============================
 */
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: var(--color-cloud);
 }
 .list-point {
+  flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
   background-color: var(--color-white);
+}
+.team .list {
+  display: flex;
+  gap: 24px;
 }
 /**
   |============================
@@ -172,15 +311,29 @@ Body {
   |============================
 */
 .footer {
+  padding: 100px 0;
   background-color: var(--color-navy-blue);
 }
 .studio-footer {
   color: var(--color-cloud);
-  font-family: 'Raleway', sans-serif
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 1.17;
+  display: inline-block;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+.logo {
+  margin-bottom: 16px;
+}
+
 .text-footer {
   color: var(--color-cloud);
+  width: 264px;
 }
 /**
   |============================
@@ -196,11 +349,20 @@ Body {
   color: var(--color-iris);
   font-family: "Roboto", sans-serif;
   background-color: var(--color-cloud);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid var(--heder-border-cl);
+  border-radius: 4px;
 }
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border: 1px solid transparent;
 }
 
 .text-header {
@@ -209,4 +371,30 @@ Body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-bottom: 8px;
+}
+
+.section-portfolio {
+  padding: 96px 0 120px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.text {
+  margin-bottom: 8px;
+}
+.card-categories {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
