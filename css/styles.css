@@ -81,13 +81,13 @@ img {
   | styles header
   |============================
 */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header .container {
   display: flex;
   align-items: center;
   margin: 0 auto 0 auto;
-}
-.header {
-  border-bottom: 1px solid var(--heder-border-cl);
 }
 .header-nav {
   color: var(--color-ocean);
@@ -271,7 +271,7 @@ img {
   font-weight: 700;
   font-style: normal;
   line-height: 1.11;
-  text-align: center;
+
   text-transform: capitalize;
   letter-spacing: 0.02em;
   font-size: 36px;
@@ -329,6 +329,7 @@ img {
 }
 .logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .text-footer {
