@@ -98,7 +98,7 @@ img {
   font-size: 16px;
   line-height: 24px;
 }
-.logo {
+.nav-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -106,8 +106,6 @@ img {
   margin-right: 76px;
   line-height: 1.17;
 
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
@@ -143,11 +141,7 @@ img {
 .header-nav .header-link:focus {
   color: var(--color-ocean);
 }
-.list {
-  display: flex;
-  margin-left: 76px;
-  gap: 40px;
-}
+
 .header-adrs {
   font-style: normal;
   font-weight: 400;
@@ -328,10 +322,6 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-}
-.logo {
-  margin-bottom: 16px;
-  display: inline-block;
 }
 
 .text-footer {
