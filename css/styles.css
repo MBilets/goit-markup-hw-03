@@ -11,6 +11,7 @@
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
+  --heder-border-cl: #e7e9fc;
 }
 /*скидання стилів*/
 h1,
@@ -54,7 +55,7 @@ Body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -64,6 +65,9 @@ Body {
 /*- властивість border-box вже вказана в нормалізаторі*/
 
 /*styles header*/
+.header {
+  border-bottom: 1px solid var(--heder-border-cl);
+}
 
 .header-nav-container {
   display: flex;
@@ -126,9 +130,7 @@ Body {
 .header-nav .header-link:focus {
   color: var(--color-ocean);
 }
-.adrs {
-  font-style: normal;
-}
+
 .header-adrs {
   font-style: normal;
   font-weight: 400;
@@ -198,6 +200,19 @@ Body {
 }
 
 /*styles section 2*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .feature-section {
   display: flex;
   padding-top: 120px;
@@ -280,6 +295,9 @@ Body {
 .text-card {
   text-align: center;
 }
+.header-three-team {
+  margin-bottom: 8px;
+}
 /*footer*/
 
 .footer {
@@ -301,17 +319,27 @@ Body {
   margin-bottom: 16px;
 }
 /*Portfolio*/
+.portfolio {
+  padding: 96px 0 120px;
+}
 
 .btn-portfolio {
   font-size: 16px;
   letter-spacing: 0.04em;
   font-weight: 500;
   line-height: 1.5;
-  cursor: pointer;
   color: var(--color-iris);
   font-family: "Roboto", sans-serif;
   background-color: var(--color-cloud);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: 1px solid var(--heder-border-cl);
+  border-radius: 4px;
 }
+
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: var(--color-white);
@@ -319,9 +347,30 @@ Body {
 }
 
 .text-header {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+}
+.list-filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.list-cards {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 32px;
+}
+.card-categories {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.about-list-cards {
+  flex-basis: calc(100%-48 / 3);
 }
