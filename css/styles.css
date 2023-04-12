@@ -77,9 +77,6 @@ Body {
 .menu {
   gap: 40px;
 }
-.menu-item {
-  padding: 24px 0px;
-}
 .menu,
 .menu-adrs {
   display: flex;
@@ -122,6 +119,8 @@ Body {
 }
 
 .header-link {
+  display: flex;
+  padding: 24px 0px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -235,7 +234,7 @@ Body {
 /*styles section 3*/
 .section-about {
   display: flex;
-  padding: 120px 0px;
+  padding-bottom: 120px;
 }
 .about-list {
   flex-wrap: wrap;
