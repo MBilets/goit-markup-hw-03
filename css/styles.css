@@ -74,6 +74,12 @@ Body {
   align-items: center;
   justify-content: space-between;
 }
+.menu {
+  gap: 40px;
+}
+.menu-item {
+  padding: 24px 0px;
+}
 .menu,
 .menu-adrs {
   display: flex;
@@ -113,9 +119,6 @@ Body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-grey);
-}
-.menu-item:not(:last-child) {
-  margin: 40px;
 }
 
 .header-link {
@@ -217,10 +220,9 @@ Body {
   display: flex;
   padding: 120px 0;
 }
-.list {
+.main-feature-list {
   gap: 24px;
 }
-
 .feature-list {
   flex-basis: calc((100% - 72px) / 4);
 }
