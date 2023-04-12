@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!--нормалізатор стилів-->
+    <!--нормалайзер-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
@@ -30,36 +30,35 @@
   </head>
 
   <body>
-    <!--шапка сайту навігаційне меню-->
+    <!--шапка сайту -->
     <header class="header">
-      <!-- header container -->
-      <div class="container">
-        <!-- header nav -->
+      <!--навігаційне меню-->
+      <div class="container header-nav-container">
         <nav class="header-nav">
-          <!-- logo -->
-          <a href="./index.html" class="link nav-logo"
+          <a href="./index.html" class="logo link"
             >Web<span class="header-logo-studio">Studio</span></a
           >
-          <ul class="list">
-            <li>
+          <ul class="menu list">
+            <li class="menu-item">
               <a class="header-link link" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a class="header-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="menu-item">
               <a class="header-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
+
         <address class="adrs">
-          <ul class="list">
-            <li>
+          <ul class="list menu-adrs">
+            <li class="menu-item">
               <a class="header-adrs link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="menu-item">
               <a class="header-adrs link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -72,38 +71,39 @@
     <main>
       <!--Hero section1-->
       <section class="hero-section">
-        <div class="container">
+        <div class="container hero-item">
           <h1 class="hero-header">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
       </section>
+
       <!--Section2 section-->
-      <section class="features">
+      <section class="feature-section">
         <div class="container">
-          <h2 class="header-hidden">Feature</h2>
-          <ul class="list features-description">
-            <li class="features-list">
+          <h2 class="header-hidden" hidden>Feature</h2>
+          <ul class="list">
+            <li class="feature-list">
               <h3 class="header-three">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="features-list">
+            <li class="feature-list">
               <h3 class="header-three">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="features-list">
+            <li class="feature-list">
               <h3 class="header-three">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="features-list">
+            <li class="feature-list">
               <h3 class="header-three">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
@@ -114,11 +114,11 @@
         </div>
       </section>
       <!--Section3 section-->
-      <section class="product-section">
+      <section class="section-about">
         <div class="container">
           <h2 class="header-two">What are we doing</h2>
-          <ul class="list">
-            <li class="product-list">
+          <ul class="list about-list">
+            <li class="about-list">
               <img
                 src="./images/section2/img1.jpg"
                 alt="site"
@@ -126,7 +126,7 @@
                 height="330"
               />
             </li>
-            <li class="product-list-item">
+            <li class="about-list">
               <img
                 src="./images/section2/img2.jpg"
                 alt="mobile application"
@@ -134,7 +134,7 @@
                 height="330"
               />
             </li>
-            <li class="product-list-item">
+            <li class="about-list">
               <img
                 src="./images/section2/img3.jpg"
                 alt="mobile version"
@@ -145,12 +145,11 @@
           </ul>
         </div>
       </section>
-
-      <!--Section4 team section-->
+      <!--Section4 section-->
       <section class="team">
         <div class="container">
           <h2 class="header-two">Our Team</h2>
-          <ul class="list">
+          <ul class="list team-list">
             <li class="list-point">
               <img
                 src="./images/section3/img1.jpg"
@@ -158,9 +157,9 @@
                 width="264"
                 height="260"
               />
-              <div class="team-descr">
-                <h3 class="header-three">Mark Guerrero</h3>
-                <p class="text">Product Designer</p>
+              <div class="card-content">
+                <h3 class="header-three header-three-team">Mark Guerrero</h3>
+                <p class="text text-card">Product Designer</p>
               </div>
             </li>
             <li class="list-point">
@@ -170,9 +169,9 @@
                 width="264"
                 height="260"
               />
-              <div class="team-descr">
-                <h3 class="header-three">Tom Ford</h3>
-                <p class="text">Frontend Developer</p>
+              <div class="card-content">
+                <h3 class="header-three header-three-team">Tom Ford</h3>
+                <p class="text text-card">Frontend Developer</p>
               </div>
             </li>
             <li class="list-point">
@@ -182,9 +181,9 @@
                 width="264"
                 height="260"
               />
-              <div class="team-descr">
-                <h3 class="header-three">Camila Garcia</h3>
-                <p class="text">Marketing</p>
+              <div class="card-content">
+                <h3 class="header-three header-three-team">Camila Garcia</h3>
+                <p class="text text-card">Marketing</p>
               </div>
             </li>
             <li class="list-point">
@@ -194,9 +193,9 @@
                 width="264"
                 height="260"
               />
-              <div class="team-descr">
-                <h3 class="header-three">Daniel Wilson</h3>
-                <p class="text">UI Designer</p>
+              <div class="card-content">
+                <h3 class="header-three header-three-team">Daniel Wilson</h3>
+                <p class="text text-card">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -206,7 +205,7 @@
     <!--Footer-->
     <footer class="footer">
       <div class="container">
-        <a class="logo link" href="./index.html"
+        <a class="logo link footer-logo" href="./index.html"
           >Web<span class="studio-footer">Studio</span></a
         >
         <p class="text-footer">
