@@ -215,10 +215,14 @@ Body {
 
 .feature-section {
   display: flex;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 .list {
   gap: 24px;
+}
+
+.feature-list {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 /*
@@ -248,6 +252,9 @@ Body {
   letter-spacing: 0.02em;
   font-size: 20px;
   color: var(--color-navy-blue);
+}
+.header-feature {
+  margin-bottom: 8px;
 }
 .text {
   font-weight: 400;
@@ -317,6 +324,7 @@ Body {
 
 .footer-logo {
   margin-bottom: 16px;
+  display: inline-block;
 }
 /*Portfolio*/
 .portfolio {
@@ -344,6 +352,7 @@ Body {
 .btn-portfolio:focus {
   color: var(--color-white);
   background-color: var(--color-ocean);
+  border: 1px solid transparent;
 }
 
 .text-header {
@@ -363,7 +372,7 @@ Body {
 .list-cards {
   flex-wrap: wrap;
   column-gap: 24px;
-  row-gap: 32px;
+  row-gap: 48px;
 }
 .card-categories {
   padding: 32px 16px;
